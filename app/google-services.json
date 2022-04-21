@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "37941311340",
+    "project_id": "prosaver-e0193",
+    "storage_bucket": "prosaver-e0193.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37941311340:android:d8dee383f4e3a762456549",
+        "android_client_info": {
+          "package_name": "com.f08.prosaver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "37941311340-t92np88vf2170mh9svsns8qb05kofdeu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-Gdk3hZ8kwTo5wTr_xenQA0XVXf3qYjY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "37941311340-t92np88vf2170mh9svsns8qb05kofdeu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

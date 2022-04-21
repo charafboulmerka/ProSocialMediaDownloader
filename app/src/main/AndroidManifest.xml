@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.f08.prosaver">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+
+    <queries>
+        <package android:name="com.whatsapp" />
+        <package android:name="com.whatsapp.w4b" />
+        <package android:name="com.eterno.shortvideos" />
+        <package android:name="io.chingari.app" />
+        <package android:name="com.facebook.katana" />
+        <package android:name="com.mitron.tv" />
+        <package android:name="com.roposo.android" />
+        <package android:name="in.mohalla.sharechat" />
+        <package android:name="com.kwai.bulldog" />
+        <package android:name="com.vimeo.android.videoapp" />
+        <package android:name="com.instagram.android" />
+        <package android:name="video.like" />
+        <package android:name="com.twitter.android" />
+        <package android:name="com.zhiliaoapp.musically.go" />
+        <package android:name="com.zhiliaoapp.musically" />
+        <package android:name="com.next.innovation.takatak" />
+    </queries>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/i512"
+        android:largeHeap="true"
+        tools:replace="android:supportsRtl"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".activity.WelcomActivity"
+            android:exported="true">
+        </activity>
+        <activity android:name=".activity.AllGamesActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.AboutUsActivity" />
+        <activity android:name=".activity.FacebookActivity" />
+        <activity android:name=".activity.TikTokActivity" />
+        <activity android:name=".activity.WhatsappActivity" />
+        <activity android:name=".activity.InstagramActivity" />
+        <activity android:name=".activity.FullViewActivity" />
+        <activity android:name=".activity.LikeeActivity" />
+        <activity android:name=".activity.JoshActivity" />
+        <activity android:name=".activity.MitronActivity" />
+        <activity android:name=".activity.ChingariActivity" />
+        <activity android:name=".activity.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.GalleryActivity" />
+        <activity android:name=".activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.WebviewAcitivity" />
+        <activity android:name=".activity.TwitterActivity" />
+        <activity android:name=".activity.RoposoActivity" />
+        <activity android:name=".activity.ShareChatActivity" />
+        <activity android:name=".activity.SnackVideoActivity" />
+        <activity android:name=".activity.MXTakaTakActivity" />
+        <activity android:name=".activity.MojActivity" />
+        <activity android:name=".activity.FBLoginActivity" />
+        <activity android:name=".activity.VideoPlayerActivity" />
+        <activity
+            android:name=".activity.GamesPlayActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher_round" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimaryDark" />
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
+
+    </application>
+
+</manifest>
